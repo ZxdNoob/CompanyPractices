@@ -30,26 +30,40 @@
                             <div class="site-nav-hd">
                                 <a href="javascript:void(0)">我的淘宝
                                 </a>
-                                <i class="down-arrow"></i>
                                 <ul class="tb_list">
                                     <li>
-                                        <span>已买到的宝贝</span>
+                                        <a href="##">已买到的宝贝</a>
                                     </li>
                                     <li>
-                                        <span>我的足迹</span>
+                                        <a href="##">我的足迹</a>
                                     </li>
                                 </ul>
+                                <i class="down-arrow"></i>
                             </div>
                         </li>
                         <li>
                             <div class="site-nav-hd">
                                 <a href="javascript:void(0)"><b class="shopcart_icon"></b>购物车</a>
+                                <div class="shopcart_msg">
+                                    <p>
+                                        您购物车里还没有任何宝贝。
+                                        <a class="site-nav-btn" href="//cart.taobao.com/my_cart.htm?from=mini&ad_id=&am_id=&cm_id=&pm_id=150042785330be233161">查看我的购物车</a>
+                                    </p>
+                                </div>
                                 <i class="down-arrow"></i>
                             </div>
                         </li>
                         <li>
                             <div class="site-nav-hd">
                                 <a href="javascript:void(0)"><b class="favorites_icon"></b>收藏夹</a>
+                                <ul class="tb_list">
+                                    <li>
+                                        <a href="##">收藏的宝贝</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">收藏的店铺</a>
+                                    </li>
+                                </ul>
                                 <i class="down-arrow"></i>
                             </div>
                         </li>
@@ -62,6 +76,29 @@
                         <li>
                             <div class="site-nav-hd">
                                 <a href="javascript:void(0)">卖家中心</a>
+                                <ul class="tb_list">
+                                    <li>
+                                        <a href="##">免费开店</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">已卖出的宝贝</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">出售中的宝贝</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">卖家服务市场</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">卖家培训中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">体检中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="##">问商友</a>
+                                    </li>
+                                </ul>
                                 <i class="down-arrow"></i>
                             </div>
                         </li>
@@ -69,6 +106,14 @@
                             <div class="site-nav-hd">
                                 <div class="site-nav-hd">
                                     <a href="https://consumerservice.taobao.com">联系客服</a>
+                                    <ul class="tb_list service">
+                                        <li>
+                                            <a href="##">消费者客服</a>
+                                        </li>
+                                        <li>
+                                            <a href="##">卖家客服</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
@@ -99,8 +144,11 @@
                 <div class="search">
                     <div class="input_wrapper clearfloat fl">
                         <div class="option fl">
-                            <span>宝贝</span>
+                            <span id="goods">宝贝</span>
                             <i class="arrow_down"></i>
+                            <ul class="select_shop">
+                                <li id="selected"><a href="##" id="shop">店铺</a></li>
+                            </ul>
                         </div>
                         <div class="search_box fl">
                             <input type="text" />
