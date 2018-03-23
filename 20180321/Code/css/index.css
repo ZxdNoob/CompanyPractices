@@ -659,7 +659,7 @@ table {
 /*主体内容开始*/
 
 .main {
-    background-color: #160403;
+    background-image: url(../img/bg.png);
     border-top: 1px solid #f56293;
 }
 
@@ -821,11 +821,6 @@ table {
     background-color: #dac57f;
     color: white;
     font-size: 20px;
-}
-
-.show .shop_description .shop_btn:hover {
-    background-color: #f56293;
-    color: #dac57f;
 }
 
 
