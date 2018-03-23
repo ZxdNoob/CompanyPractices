@@ -48,6 +48,10 @@ img {
     border: 0;
 }
 
+i {
+    font-style: normal;
+}
+
 button,
 input,
 select,
@@ -270,8 +274,119 @@ table {
     padding-left: 2px;
 }
 
-.right_cont .shopcart_msg.site-nav-btn,
-.mid .content .more {
+.right_cont .site-nav:hover .site-nav-wrapper {
+    display: block;
+}
+
+.right_cont .site-nav-hd .site-nav-wrapper {
+    width: 1198px;
+    display: none;
+    position: absolute;
+    min-height: 258px;
+    top: 34px;
+    right: -1px;
+    left: auto;
+    z-index: 100;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.site-nav-wrapper .site-list {
+    width: 24%;
+    padding: 5px;
+    border-right: 1px solid #eee;
+}
+
+.site-nav-wrapper .site-list:last-child {
+    border-right: none;
+}
+
+.site-nav-wrapper .site-list .site-nav-title {
+    font-weight: 600;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.site-list .theme {
+    color: #f50;
+}
+
+.site-list .spacial {
+    color: #9fb838;
+}
+
+.site-list .ali_app {
+    color: #d75696;
+}
+
+.site-list .good_set {
+    color: #2e9fdb;
+}
+
+.site-list ul {
+    overflow: hidden;
+}
+
+.site-nav-wrapper .site-list ul>li {
+    float: left;
+    margin-right: 0;
+}
+
+.site-list ul li a {
+    padding: 0 8px;
+    line-height: 25px;
+    display: inline-block;
+    position: relative;
+    margin: 0 2px;
+}
+
+.site-list ul li i {
+    width: 9px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+.site-list ul li .hot {
+    background-image: url(../img/hot.gif);
+}
+
+.site-list ul li .new {
+    background-image: url(../img/new.gif);
+}
+
+.site-list .theme_list a:hover,
+.site-list .spacial_list a:hover,
+.site-list .ali_app_list a:hover,
+.site-list .good_set_list a:hover {
+    color: white;
+}
+
+.site-list .theme_list a:hover {
+    background-color: #f50;
+}
+
+.site-list .spacial_list a:hover {
+    background-color: #9fb838;
+}
+
+.site-list .ali_app_list a:hover {
+    background-color: #d75696;
+}
+
+.site-list .good_set_list a:hover {
+    background-color: #2e9fdb;
+}
+
+.right_cont .shopcart_msg .site-nav-btn,
+.mid .content .more,
+.site-list .theme_list a:hover,
+.site-list .spacial_list a:hover,
+.site-list .ali_app_list a:hover,
+.site-list .good_set_list a:hover {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     border-radius: 2px;
@@ -478,10 +593,10 @@ table {
     margin: 0 auto;
 }
 
-.list_wrapper ol li,
+.list_wrapper .nz_list li,
 .list_wrapper ul li {
-    height: 42px;
-    line-height: 42px;
+    height: 36px;
+    line-height: 36px;
     display: inline-block;
 }
 
@@ -498,10 +613,11 @@ table {
 }
 
 .list_wrapper ul li a,
-.list_wrapper ol li a,
+.list_wrapper .nz_list li a,
 .list_wrapper ul li span {
     font-size: 14px;
     font-weight: 600;
+    font-family: "宋体";
     color: #404040;
     display: inline-block;
     padding: 0 15px;
@@ -523,8 +639,15 @@ table {
     color: #fff;
 }
 
-.list_wrapper ul li a:hover,
-.list_wrapper ol li a:hover {
+.list_wrapper .nz_list li a {
+    height: 100%;
+    width: auto;
+    zoom: 1;
+    text-align: center;
+}
+
+.nz_list li a:hover,
+.list_wrapper ul li a:hover {
     background-color: #f56293;
     color: #fff;
 }
@@ -638,7 +761,7 @@ table {
     height: 312px;
     top: 0;
     left: 0;
-    background-color: rgba(3, 3, 3, .2);
+    background-color: rgba(3, 3, 3, .3);
 }
 
 .show .shop_description {
