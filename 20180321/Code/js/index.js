@@ -55,3 +55,27 @@ var changeType = function() {
 };
 
 selectList.onclick = changeType;
+
+//回到顶部
+
+var backTopBtn = $.byId("go_top");
+
+var backTop = function() {
+    var top = document.body.scrollTop || document.documentElement.scrollTop; //获取滚动条距离,后者是为了兼容IE
+    scrollBy(0, -top); //让滚动条距离为0，实现回到顶部
+};
+
+backTopBtn.onclick = backTop;
+
+//窗口大小监听事件
+var backTopBar = $.byId("back-top-bar");
+onresize = function() {
+    var thisWidth = document.body.clientWidth; //实时可视窗口宽度
+    if (thisWidth < 1700) {
+        backTopBar.style.right = 100 + "px";
+        backTopBar.style.top = 700 + "px";
+    } else {
+        backTopBar.style.right = 320 + "px";
+        backTopBar.style.top = 730 + "px";
+    }
+};
